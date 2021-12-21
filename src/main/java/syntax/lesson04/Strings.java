@@ -9,6 +9,8 @@ public class Strings {
                "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
         String s = lorem.replaceAll("o", "ˤ̙̘̗̖̔̒̓̑̐̏̎̍̚̕");
        final String m = s.replaceAll(",","ˤ̙̘̗̖̔̒̓̑̐̏̎̍̚̕");
+       //Брат, вот как ты мог бы заменить все вхождения 2-х символов одновременно:
+       //s = lorem.replaceAll("[o,]", "ˤ̙̘̗̖̔̒̓̑̐̏̎̍̚̕");
        System.out.println(m);
    }
 }
