@@ -17,6 +17,7 @@ public class Massives {
                     swap = poryadok[a - 1];
                     poryadok[a - 1] = poryadok[a];
                     poryadok[a] = swap;
+                    System.out.println("Шаг внешнего цикла = " + i + ". Шаг внутреннего цикла = "+ a +". Меняю местами " + poryadok[a-1] + " и " + poryadok[a]);
                     sorted = false;
                 }
             }
