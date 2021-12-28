@@ -13,7 +13,7 @@ public class Massives {
 
             for (int a = 1; a < (dataLength - i); a++) {
 
-                if (poryadok[a - 1] > poryadok[a]) {
+                if (poryadok[a - 1] < poryadok[a]) {
                     swap = poryadok[a - 1];
                     poryadok[a - 1] = poryadok[a];
                     poryadok[a] = swap;
