@@ -1,7 +1,28 @@
 package syntax.lesson05;
+import java.util.Arrays;
 
 public class Massives {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
+        float[] poryadok = {5f, 6f, 2f, 1f, 9f, 15f, 3f, 4f, 7f, 8f, 11f, 20f, 17f, 19f, 16f};
+        int dataLength = poryadok.length;
+        float swap;
+        boolean sorted;
+        for (int i = 0; i < dataLength; i++) {
 
+            sorted = true;
+
+            for (int a = 1; a < (dataLength - i); a++) {
+
+                if (poryadok[a - 1] > poryadok[a]) {
+                    swap = poryadok[a - 1];
+                    poryadok[a - 1] = poryadok[a];
+                    poryadok[a] = swap;
+                    sorted = false;
+                }
+            }
+            if (sorted) break;
+        }
+        System.out.println(Arrays.toString(poryadok));
     }
 }
+
