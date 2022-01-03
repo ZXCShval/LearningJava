@@ -27,8 +27,8 @@ public class Massives {
         String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
         char[] m = lorem.toCharArray();
         int chars = 0;
-        for (int a = 0; a<m.length;a++) {
-            if (m[a] =='m') {
+        for (char a : m) {
+            if (a =='m') {
                 chars++;
         }
         }
