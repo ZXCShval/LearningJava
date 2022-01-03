@@ -24,6 +24,17 @@ public class Massives {
             if (sorted) break;
         }
         System.out.println(Arrays.toString(poryadok));
+        String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+        char[] m = lorem.toCharArray();
+        int chars = 0;
+        for (int a = 0; a<m.length;a++) {
+            if (m[a] =='m') {
+                chars++;
+        }
+        }
+        System.out.println("Количество 'm' в строке = " + chars);
     }
 }
+
+
 
