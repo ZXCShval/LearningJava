@@ -3,6 +3,10 @@ import java.util.Arrays;
 
 public class Massives {
     public static void main (String[] args) {
+        Bubble();
+        Lorem();
+    }
+        static void Bubble () {
         float[] poryadok = {5f, 6f, 2f, 1f, 9f, 15f, 3f, 4f, 7f, 8f, 11f, 20f, 17f, 19f, 16f};
         int dataLength = poryadok.length;
         float swap;
@@ -24,6 +28,10 @@ public class Massives {
             if (sorted) break;
         }
         System.out.println(Arrays.toString(poryadok));
+    }
+
+        static void Lorem()
+        {
         String lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
         char[] m = lorem.toCharArray();
         int chars = 0;
@@ -34,6 +42,7 @@ public class Massives {
         }
         System.out.println("Количество 'm' в строке = " + chars);
     }
+
 }
 
 
